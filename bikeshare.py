@@ -201,9 +201,7 @@ def trip_duration_stats(city_data):
     print('Total travel time (h): ',total_travel_time_hh)
     print()
 
-    print()
-
-# calculate user stats
+    # calculate user stats
 def user_stats(city_data,city):
     city = city.lower()
     user_type_trips = city_data['User Type'].value_counts(dropna = False)
@@ -243,7 +241,7 @@ def five_lines(city_data):
             print('Enter "y" to see more raw data (5 lines), other to continue.')
             ans = input().lower()
             c = c + 5
-        
+
 
 def main():
     while True:
